@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="container-fluid">
+  <!-- <- header -> -->
+    <header >
+        <div class="navbar navbar-expand-lg ">
+            <div class="container-fluid align-items-center ps-5 pe-5 row">
+                <div class="navbar-brand col-4 col-lg">
+                    <img src="/public/images/logo.png"  height="50px" alt="">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#naviteams">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse col-4 col-lg collapse" id="naviteams">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Pages</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    </ul>   
+                </div>
+                <div class="col-4 col-lg ">
+                    <span class="bi bi-cart"></span>
+                </div>
+              </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- <- carousel -> -->
+  <div id="carousel1" class="carousel slide">
+          <div class="carousel-controls">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(/public/images/carousel.jpg);" ></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(/public/images/carousel2.jpg);"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(/public/images/carousel3.jpg);"></button>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img id="one" src="/public/images/carousel.jpg" class="d-block w-100" height="500px" alt="...">
+            <div class="carousel-caption one">
+              <h2>The Perfect Space to Enjoy Fantastic Food</h2>
+              <p>Festive dining at Farthings where we are strong believers in using the very best produce</p>            
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="/public/images/carousel2.jpg" height="500px" class="d-block w-100" alt="...">
+            <div class="carousel-caption secound">
+              <h3>grilled cheese</h3>
+              <h1>burger</h1>
+              <h6>limited time offer</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/public/images/carousel3.jpg" height="500px" class="d-block w-100" alt="...">
+            <div class="carousel-caption three">
+              <h3>delicious</h3>
+              <h1>Hot Pizza</h1>
+              <h6>don't miss this deal</h6>
+            </div>
+          </div>
+      </div>
+      <div class="weekly-special row">
+        <span class="badge">Weekly Special</span>
+        <div class="col-lg-6 col-6 pt-4">
+           <h4><sup>$</sup>90.85</h4>
+           <h5>Sicilian Pizza</h5>
+           <ul class="star list-unstyled d-flex">
+            <li class="bi bi-star-fill"></li>
+            <li class="bi bi-star-fill"></li>
+            <li class="bi bi-star-fill"></li>
+            <li class="bi bi-star-fill"></li>
+            <li class="bi bi-star-fill"></li>
+           </ul>
+        </div>
+        <div class="col-lg-6 col-6 pt-3 pb-2 ">
+          <img alt="Pizza" class="img-fluid" src="/public/images/weekly.png">
+        </div>
+     </div>
+  </div>
+    <!-- end of carousel -->
+
+    <!-- section about restaurant -->
+    <section class="container-fluid">
+      <div class="row pe-5 ps-5">
+          <div class="RESTAURANT text-center pt-5 pb-3">
+            <span></span><p style="font-family: 'Fredoka', sans-serif; font-weight:900; color: rgb(244, 13, 13);" >ABOUT THE FOOD RESTAURANT</p>
+          </div>
+            <div class="col-12 col-lg">
+              <h1 style="font-family: 'Fredoka', sans-serif;font-weight:bolder;">New Ground with Dishes to be Enjoyed</h1>
+            </div>
+            <div class="col-12 col-lg">
+              <p style="font-family: 'Fredoka', sans-serif;">Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci varius nat oque pena tibus et urient monte nascete ridiculus mus nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan ligula.</p>
+              <div class="d-flex">
+                 <div>
+                  <img src="/public/images/james.jpg" class=" border rounded-circle" alt="">
+                </div>   
+                   <div>
+                    <b> <h6 class="position-absolute ps-4 pt-3" style="font-weight: bolder;">Willimes James</h6></b>
+                    <p class="position-absolute ps-4" style="padding-top: 35px; font-size: 12px;font-family: 'Fredoka', sans-serif;">Director and Chief Operations Officer</p>
+                   </div>        
+              </div>
+            </div>         
+        </div>
+        <di class="row align-items-center text-center ">
+          <div class="col-lg-4 col-12" id="restaurantss">
+            <video src="/public/images/restaurant.mp4" class="border rounded-4" autoplay  loop style="height: 350px; "></video>
+            <p>RESTAURANT</p>
+          </div>
+          <div class="col-lg-4 col-12"  id="dinner">
+            <video src="/public/images/dinner.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>
+            <p>private dining</p>
+          </div>
+          <div class="col-lg-4 col-12" id="bed"> 
+            <video src="/public/images/bed.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>            
+            <p>beds</p>
+          </div>
+        </di>
+    </section>
+    <!-- end of section about restaurant-->
+    <!-- Discover Menu -->
+    <section class="container-fluid pt-5">
+      <div class="row ">
+        <h3 id="menu" class="text-center align-items-center">Discover Menu</h3>
+        </div>
+        <div id="menulist">
+          <ul class="nav nav-pills d-flex flex-wrap justify-content-center">
+            <li class="nav-item" >
+              <a class="nav-link active show " data-bs-toggle="pill" data-bs-target="#v-pills-home" ><img src="/public/images/dssert-removebg-preview.png"   alt=""><h6>dssert</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-profile" ><img src="/public/images/steak.jpg"   alt=""><h6>Steak</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" data-bs-toggle="pill" data-bs-target="#pills-coffee"><img src="/public/images/coffee.jpg" alt=""> <h6>COFFEE  </h6></a>           
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-pizza"><img src="/public/images/pizza.jpg" alt=""><h6>pizza</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-burger"><img src="/public/images/burger icon.jpg"alt=""></img> <h6>burger</h6></a>
+            </li>
+          </ul>
+          <div class="tab-content text-center align-content-center pt-5 " id="pills-tabContent">
+            <div class="tab-pane fade active show" id="v-pills-home">
+              <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
+                 <div class="col-xl-6 col-12 col-lg-6 align-items-center ">
+                       <img alt="" class="img-fluid" src="/public/images/Red Velvet Cupcakes.jpg">
+                 </div>
+                 <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
+                       <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">Dessert menu</h4>
+                       <ul class="list-unstyled" style="font-family: 'Epilogue', sans-serif;font-family: 'Fredoka', sans-serif;">
+                          <li class="d-flex justify-content-between">
+                             <div>
+                                <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Four Chease Garlic Bread</h6>
+                                <p>Toested french bread topped with romano</p>
+                             </div>
+                              <span class="text-danger ">$9.00</span>
+                          </li>
+                          <li class="d-flex justify-content-between" >
+                             <div >
+                                <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Rastrami Roll</h6>
+                                <p>Spreadable cream cheese, blue cheese</p>
+                             </div>
+                             <span class="text-danger"  >$16.00</span>
+                          </li>
+                          <li  class="d-flex justify-content-between">
+                             <div>
+                                <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Caprese Salad Kabobs</h6>
+                                <p>Cherry-size fresh mozzarella cheese balls</p>
+                             </div>
+                             <span class="text-danger">$34.00</span>
+                          </li>
+                          <li  class="d-flex justify-content-between">
+                             <div>
+                                <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Peachy Jalepeno Guacomole</h6>
+                                <p>Ground cumin, avocados, peeled and cubed</p>
+                             </div>
+                             <span class="text-danger">$40.00</span>
+                          </li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile">
+               <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
+                  <div class="col-xl-6 col-12 col-lg-6 align-items-center d">
+                        <img alt="" class="img-fluid" src="/public/images/Steak2.jpg">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
+                        <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">Steak menu</h4>
+                        <ul class="list-unstyled" style="font-family: 'Epilogue', sans-serif;font-family: 'Fredoka', sans-serif;">
+                           <li class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Four Chease Garlic Bread</h6>
+                                 <p>Toested french bread topped with romano</p>
+                              </div>
+                               <span class="text-danger ">$9.00</span>
+                           </li>
+                           <li class="d-flex justify-content-between" >
+                              <div >
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Rastrami Roll</h6>
+                                 <p>Spreadable cream cheese, blue cheese</p>
+                              </div>
+                              <span class="text-danger"  >$16.00</span>
+                           </li>
+                           <li  class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Caprese Salad Kabobs</h6>
+                                 <p>Cherry-size fresh mozzarella cheese balls</p>
+                              </div>
+                              <span class="text-danger">$34.00</span>
+                           </li>
+                           <li  class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Peachy Jalepeno Guacomole</h6>
+                                 <p>Ground cumin, avocados, peeled and cubed</p>
+                              </div>
+                              <span class="text-danger">$40.00</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+           <div class="tab-pane fade" id="pills-coffee">
+            <div class="row  discover-menu p-3 h-25 " style=" background-color: #ffffff4f;">
+               <div class="col-xl-6 col-12 col-lg-6 align-items-center d">
+                     <img alt="" class="img-fluid" src="/public/images/coffee2.jpg">
+               </div>
+               <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
+                     <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">Coffee Menu</h4>
+                     <ul class="list-unstyled" style="font-family: 'Epilogue', sans-serif;font-family: 'Fredoka', sans-serif;">
+                        <li class="d-flex justify-content-between">
+                           <div>
+                              <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Espresso Macchiato</h6>
+                              <p>Chicken / Apple / Tomatos</p>
+                           </div>
+                            <span class="text-danger ">$9.00</span>
+                        </li>
+                        <li class="d-flex justify-content-between" >
+                           <div >
+                              <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Mocha Whipped Cream</h6>
+                              <p>Bacon / Shrimp / Garlic</p>
+                           </div>
+                           <span class="text-danger"  >$16.00</span>
+                        </li>
+                        <li  class="d-flex justify-content-between">
+                           <div>
+                              <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Cold Coffee</h6>
+                              <p>Pork / Tomatoes / Veggies</p>
+                           </div>
+                           <span class="text-danger">$34.00</span>
+                        </li>
+                        <li  class="d-flex justify-content-between">
+                           <div>
+                              <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Caramel Macchiato</h6>
+                              <p>Prawn / Sausage / Totatos</p>
+                           </div>
+                           <span class="text-danger">$40.00</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>  
+            <div class="tab-pane fade" id="pills-pizza">
+               <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
+                  <div class="col-xl-6 col-12 col-lg-6 align-items-center d">
+                        <img alt="" class="img-fluid" src="/public/images/pizza2.jpg">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
+                        <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">pizza Menu</h4>
+                        <ul class="list-unstyled" style="font-family: 'Epilogue', sans-serif;font-family: 'Fredoka', sans-serif;">
+                           <li class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Espresso Macchiato</h6>
+                                 <p>Chicken / Apple / Tomatos</p>
+                              </div>
+                               <span class="text-danger ">$9.00</span>
+                           </li>
+                           <li class="d-flex justify-content-between" >
+                              <div >
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Mocha Whipped Cream</h6>
+                                 <p>Bacon / Shrimp / Garlic</p>
+                              </div>
+                              <span class="text-danger"  >$16.00</span>
+                           </li>
+                           <li  class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Cold Coffee</h6>
+                                 <p>Pork / Tomatoes / Veggies</p>
+                              </div>
+                              <span class="text-danger">$34.00</span>
+                           </li>
+                           <li  class="d-flex justify-content-between">
+                              <div>
+                                 <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Caramel Macchiato</h6>
+                                 <p>Prawn / Sausage / Totatos</p>
+                              </div>
+                              <span class="text-danger">$40.00</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>  
+               <div class="tab-pane fade" id="pills-burger">
+                  <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
+                     <div class="col-xl-6 col-12 col-lg-6 align-items-center d">
+                           <img alt="" class="img-fluid" src="/public/images/burger2.jpg">
+                     </div>
+                     <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
+                           <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">burger Menu</h4>
+                           <ul class="list-unstyled" style="font-family: 'Epilogue', sans-serif;font-family: 'Fredoka', sans-serif;">
+                              <li class="d-flex justify-content-between">
+                                 <div>
+                                    <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Espresso Macchiato</h6>
+                                    <p>Chicken / Apple / Tomatos</p>
+                                 </div>
+                                  <span class="text-danger ">$9.00</span>
+                              </li>
+                              <li class="d-flex justify-content-between" >
+                                 <div >
+                                    <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Mocha Whipped Cream</h6>
+                                    <p>Bacon / Shrimp / Garlic</p>
+                                 </div>
+                                 <span class="text-danger"  >$16.00</span>
+                              </li>
+                              <li  class="d-flex justify-content-between">
+                                 <div>
+                                    <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Cold Coffee</h6>
+                                    <p>Pork / Tomatoes / Veggies</p>
+                                 </div>
+                                 <span class="text-danger">$34.00</span>
+                              </li>
+                              <li  class="d-flex justify-content-between">
+                                 <div>
+                                    <h6 style="font-family: 'Fredoka', sans-serif; font-weight: 600;">Caramel Macchiato</h6>
+                                    <p>Prawn / Sausage / Totatos</p>
+                                 </div>
+                                 <span class="text-danger">$40.00</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>    
+        </div>
+      </div>    
+    </section>
+    <!--End Discover Menu -->
+    <!--Cocktails-->
+    <section>
+      <div class="row text-center align-items-center">
+         <div class="col-12 col-lg-6 " id="bbq">
+            <img src="/public/images/bbq.jpg" class="h-75 w-75" alt="">
+            <h2>Steaks & BBQ</h2>
+            <p>canonical classics to obscure tiki drinks</p>
+            <div class="badge rounded rounded-circle">
+               <span class="text-danger">$120</span>
+               <h3>per person</h3>
+            </div>
+         </div>
+         <div class="col-12 col-lg-6" id="cook">
+            <img src="/public/images/cook.jpg" class="h-75 w-75" alt="">
+            <h2>Cocktails</h2>
+            <p>canonical classics to obscure tiki drinks</p>
+            <div class="badge rounded rounded-circle">
+               <span class="text-danger">$120</span>
+               <h3>per person</h3>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!--End Cocktails -->
+      <!-- reserve a table -->
+      <div id="reserveatable" class="rounded-4 me-5 ms-5">
+         <div class="row">
+            <div class="col-12 col-lg-4" id="reserve">
+               <h3>RESERVE A TABLE</h3>
+               <p>Discover our New Menu !</p>
+            </div>
+           <div class="col-12 col-8">
+            <div>
+               <form action="">
+                  <div class="row d-flex">
+                     <div class="col-12 col-lg-6">
+                        <input type="text" name="complete_name" placeholder="Complete Name">
+                     </div>
+                     <div class="col-12 col-lg-6">
+                        <input type="text" name="complete_name" placeholder="Complete Name">
+                     </div>
+                  </div>
+               </form>
+            </div>
+           </div>
+         </div>
+      </div>
+      <!--End reserve a table -->
+    <section style="height: 200px;">
+
+    </section>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

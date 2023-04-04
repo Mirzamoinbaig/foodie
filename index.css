@@ -1,0 +1,554 @@
+.navbar-nav li a{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.728);
+    
+}
+.navbar-nav li a:hover{
+    color: rgb(230, 163, 174);
+    transition: .3s ease-in-out;
+}
+
+.carousel-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+}
+#carousel1 .carousel-indicators button{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-position: center;
+    z-index: 55;
+    background-size: cover;
+}
+.carousel-indicators button.active{
+    border: 3px solid white;
+    transform: scale(1.1);
+}
+.carousel-indicators{
+    position: relative; 
+}
+#carousel1  .carousel-controls{
+    bottom: 0.5px;
+    position: absolute;
+    z-index: 10;
+}
+#carousel1 .carousel-control-next, .carousel-control-prev{
+    top: -20%;
+    opacity: 1;
+    z-index: 3;
+    border-radius: 50%;
+}
+.carousel-control-next{
+    right: 2%;
+}
+.carousel-control-prev{
+    left:2%
+}
+.one {
+    position: absolute;
+    top:140px;
+    bottom: 1.25rem;
+    left: 5%;
+    padding-top: 1.25rem;
+    padding-bottom:12%;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    text-transform: capitalize;
+}
+
+.carousel-caption h2{
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    animation: anime 1s ease-in-out;
+}
+.one p{
+    animation: anime2 1s ease-in-out;
+} 
+.secound{
+    text-transform: capitalize;
+    left: -50%;
+    top: 20%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.secound h3{
+    font-size: 50px;
+    animation: anime 1s ease-in-out;
+
+}
+.secound h1{
+    color: yellow;
+    font-size: 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    animation: anime2 1s ease-in-out;
+
+}
+.secound h6{
+    font-size: 20px;
+    letter-spacing: 2px;
+    animation: anime3 1s linear;
+
+}
+.three{
+    text-transform: capitalize;
+    left: -60%;
+    top: 20%;
+    font-weight: bold;
+    letter-spacing: 2px;  
+}
+.three h3{
+    font-size: 50px;
+    animation: anime 1s ease-in-out;
+
+}
+.three h1{
+    color: yellow;
+    font-size: 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    animation: anime2 1s ease-in-out;
+
+}
+.three h6{
+    font-size: 20px;
+    letter-spacing: 2px;
+    animation: anime3 1s ease-in-out;
+
+}
+.carousel-caption p{
+    font-size: 15px;
+    font-weight:normal;
+    text-shadow: 2px 2px 2px  rgba(27, 27, 27, 0.482);
+}
+.weekly-special{
+    position: absolute;
+    bottom:20px;
+    right: 50px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.47);
+    text-align: center;   
+}
+.weekly-special span{
+    right: 10px;
+    top: -15px;
+    width: 40%;
+    position: absolute;
+    background-color: red;
+}
+.weekly-special h4, h5{
+    color: white;
+    font-weight:900;
+}
+.weekly-special ul li{
+    color: rgba(13, 255, 0, 0.718);
+    padding-right: 8px;
+}
+.weekly-special sup{
+    color: red;
+    top: 0px;
+    padding-right: 1px;
+    font-size: 22px;
+}
+.weekly-special h5{
+    font-size: 15px;
+    letter-spacing: 1px;  
+}
+.RESTAURANT span::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 2px;
+    left: 38.5%;
+    background-color: rgba(250, 85, 85, 0.718);
+}
+#restaurantss {
+    position: relative;
+}
+#restaurantss p{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.743);
+    
+    } 
+    #dinner {
+        position: relative;
+    }
+    #dinner p{
+        position: absolute;
+        top: 55%;
+        left: 35%;
+        color: #fff;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.743);
+        } 
+#bed{
+    position: relative;  
+  
+}
+#bed p{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.743);
+   
+}
+#menu{
+    font-family: 'Fredoka', sans-serif ; 
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.924);
+    font-size: 40px;
+    position: relative;
+}
+#menu::before{
+    content: "";
+    height: 6px;
+    width: 20%;
+    top: 50px;
+    left: 40%;
+    border-radius: 500px;
+    background-color: #ffd40d;
+    position: absolute;
+    }
+    #menulist{
+    margin-top: 50px;
+    margin-bottom: 50px;
+        
+    }
+    #menulist .nav-item .nav-link{
+        border: 3px solid rgb(217, 217, 217);
+        margin-left: 10px;
+        align-items: center;
+        text-align: center;
+        width: 145px;
+        height: 125px;
+    }
+    #menulist .nav-link.active{
+        border: none;   
+    }
+    .nav-pills .nav-link.active {
+        background-color: #0fdfe2;
+        position: relative;   
+       
+    }
+    .nav-pills .nav-link.active:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 40px;
+        left: 0px;
+        background-color: #0fdfe2;
+        bottom: -19px;
+        clip-path: polygon(49% 50%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    .nav-pills .nav-item .nav-link img{
+        height: 70px;
+        width: 70px;
+    }
+    #menulist .nav-link:hover img{
+        animation: .2s flip ease-in-out ;
+    }
+
+    #menulist .nav-item a h6{
+    color: black;
+    font-family: 'Fredoka', sans-serif; 
+    font-weight:700;
+    text-align: center;
+    text-transform:uppercase;
+    }
+    .discover span{
+        font-weight: bolder;
+        font-size: 22px;
+    }
+ .discover h4{
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+    .discover li:not(:last-child) {
+        border-bottom: 1px dotted;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    #bbq,#cook {
+        position: relative;
+    }
+    #bbq img,#cook img{
+        border-radius: 20px;
+    }
+    #bbq h2,#cook h2{
+        position: absolute;
+        top: 10px;
+        left: 15%;
+        font-size: 42px;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 600; 
+        color: blanchedalmond;
+    }
+     #bbq p,#cook p{
+        position: absolute;
+        word-break: break-all; 
+        word-spacing: 2px;     
+        top: 80px;
+        left: 15%;
+        font-size: 15px;
+        width: 35%;
+        color: rgba(255, 255, 255, 0.852);
+     }
+     #bbq .badge,#cook .badge{
+        position: absolute;
+        background-color: #ffd40d;
+        left: 20%;
+        bottom: -15%;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+     }
+     .badge span{
+        font-size: 25px;
+     }
+     .badge  h3{
+        font-size: 15px;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 600;
+        padding-top: 10%;
+        color: black;
+     }
+      #reserveatable{
+        margin-top: 10%;
+        background-image: url(/public/images/reserve\ banner.jpg);
+        background-size: cover;
+        padding: 50px;
+      }
+      
+      #reserve h3{
+        width: 18%;
+        font-size: 40px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: 'Fredoka', sans-serif;
+        border-bottom: 3px solid #ffd40d;
+        border-radius: 2px;
+      }
+      #reserve p{
+        color: white;
+        padding-top: 10px;
+        font-size: 15px;
+      }
+      #reserve input{
+        height: 60px;
+        width: 100%;
+        padding-left: 20px;
+        font-family: 'Fredoka', sans-serif;
+      }
+
+            /* keyframes */
+    @keyframes anime{
+    0%{
+        transform: translateX(-100px);
+    }
+    } 
+    @keyframes anime2{
+        0%{
+        transform: translateX(100px);
+        }
+    } 
+    @keyframes anime3{
+        0%{
+        transform: scaley(-100%);
+        }
+    } 
+    @keyframes flip{
+        0%{
+            transform: scalex(-100%);
+        }
+    }
+
+
+
+                /* media qery */
+    @media screen  and (max-width: 768px){
+        .navbar-toggler{
+        right: 0;
+        margin-left: 180%;
+    }
+    .navbar-nav{
+        text-align: center;
+        background-color:transparent;
+    }
+    .navbar-nav li a{
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.728);
+    }
+    .one{
+        top: 15%;
+        left: 5%;
+        word-spacing: 5px;    
+    }
+    .carousel-caption h2{
+        font-size: 25px;
+    }
+    .weekly-special{
+        width: 40%;
+        bottom: 50px;
+        right: 20px;
+    }
+ 
+    .secound {
+        left: -180px;
+        top:30px;
+    }
+    .secound h1{
+        font-size: 35px;
+    }
+    .secound h3{
+        font-size: 15px;
+    }
+    .secound h6{
+        font-size: 12px;
+    }
+    .three {
+        left: -150px;
+        top:5px;
+    }
+    .three h1{
+        font-size: 35px;
+        padding-bottom: 0px;
+    }
+    .three h3{
+        font-size: 10px;
+    }
+    .three h6{
+        font-size: 12px;
+    }
+    .weekly-special span{
+    width: auto;
+    }
+    .RESTAURANT span::before{
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 2px;
+        left: 20%;
+        background-color: rgb(250, 85, 85);
+    }
+    #dinner{
+        margin-top:-150px;
+    }
+    #restaurantss{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    #bed{
+        margin-top: -150px;
+    }
+    #menu::before{
+        content: "";
+        height: 6px;
+        width: 50%;
+        top: 50px;
+        left: 25%;
+        border-radius: 500px;
+        background-color: #ffd40d;
+        position: absolute;
+    }
+    .nav-item{
+        padding: 0px;
+        padding-top: 5px;
+        
+    }
+    .nav-link img{
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+    #menulist .nav-item .nav-link{
+        height: 30px;
+        width: 90px;
+        padding-bottom: 25%;
+    }
+    #menulist .nav-item a h6{
+        padding-top: 0px;
+       font-weight: bold;
+    }
+    #bbq{
+        margin-bottom: 10%;
+    }
+    #bbq img{
+        height: 800%;
+        width: 500%;
+    }
+    #bbq .badge, #cook .badge{
+        left: 55%;
+    }
+}
+@media screen and (min-width:319px) and (max-width: 375px){
+  #bbq h2,#cook h2{
+    font-size: 22px;
+  }
+  #bbq p,#cook p{
+    font-size: 11px;
+  }  
+  #bbq span,#cook span{
+    font-size: 15px;
+  }
+  #bbq .badge ,#cook .badge {
+    padding: 10px; 
+ }
+    .weekly-special ul li{
+       padding-right: 4px;
+    }
+    .weekly-special h4{
+        font-size: 20px;
+    }
+    .weekly-special .img-fluid{
+        position: absolute;
+        height: 30px;
+        right: 2px;
+        top: 22px;
+        width: 30px;
+    }
+    .RESTAURANT span::before{
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 2px;
+        left: 25%;
+        background-color: rgb(250, 85, 85);
+    }
+    #dinner{
+        margin-top: -150px;
+    }
+    #menu::before{
+        content: "";
+        height: 6px;
+        width: 55%;
+        top: 55px;
+        left: 22%;
+        border-radius: 500px;
+        background-color: #ffd40d;
+        position: absolute;
+    }
+
+}
