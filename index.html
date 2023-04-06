@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="../foodie/node_modules/bootstrap-icons/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="../foodie/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Fredoka&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../foodie/index.css">
 </head>
@@ -26,7 +29,7 @@
         <div class="navbar navbar-expand-lg ">
             <div class="container-fluid align-items-center ps-5 pe-5 row">
                 <div class="navbar-brand col-4 col-lg">
-                    <img src="../foodie/public/images/logo.png"  height="50px" alt="">
+                    <img src="/public/images/logo.png"  height="50px" alt="">
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#naviteams">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,27 +37,28 @@
                 <div class="navbar-collapse col-4 col-lg collapse" id="naviteams">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Menu</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">News</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Pages</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#Experiences" class="nav-link">Collection</a></li>
+                        <li class="nav-item"><a href="#expets" class="nav-link">Chef</a></li>
+                        <li class="nav-item"><a href="#app" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="#Recentnews" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="#flogo" class="nav-link">Contact</a></li>
                     </ul>   
                 </div>
-                <div class="col-4 col-lg ">
+                <!-- <div class="col-4 col-lg ">
                     <span class="bi bi-cart"></span>
-                </div>
+                </div> -->
               </div>
         </div>
     </header>
     <!-- end of header -->
     <!-- <- carousel -> -->
-  <div id="carousel1" class="carousel slide">
+  <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-controls">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(../foodie/public/images/carousel.jpg);" ></button>
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(../foodie/public/images/carousel2.jpg);"></button>
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(../foodie/public/images/carousel3.jpg);"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(/public/images/carousel.jpg);" ></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(/public/images/carousel2.jpg);"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(/public/images/carousel3.jpg);"></button>
             </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -64,14 +68,14 @@
               </button>
          </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" >
+          <div class="carousel-item active" data-bs-interval="3000">
             <img id="one" src="/public/images/carousel.jpg" class="d-block w-100" height="500px" alt="...">
             <div class="carousel-caption one">
               <h2>The Perfect Space to Enjoy Fantastic Food</h2>
               <p>Festive dining at Farthings where we are strong believers in using the very best produce</p>            
             </div>
           </div>
-          <div class="carousel-item" >
+          <div class="carousel-item" data-bs-interval="3000">
             <img src="/public/images/carousel2.jpg" height="500px" class="d-block w-100" alt="...">
             <div class="carousel-caption secound">
               <h3>grilled cheese</h3>
@@ -79,7 +83,7 @@
               <h6>limited time offer</h6>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <img src="/public/images/carousel3.jpg" height="500px" class="d-block w-100" alt="...">
             <div class="carousel-caption three">
               <h3>delicious</h3>
@@ -102,7 +106,7 @@
            </ul>
         </div>
         <div class="col-lg-6 col-6 pt-3 pb-2 ">
-          <img alt="Pizza" class="img-fluid" src="/public/images/weekly.png">
+          <img alt="Pizza" class="img-fluid" src="../foodie/public/images/weekly.png">
         </div>
      </div>
   </div>
@@ -121,26 +125,26 @@
               <p style="font-family: 'Fredoka', sans-serif;">Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci varius nat oque pena tibus et urient monte nascete ridiculus mus nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan ligula.</p>
               <div class="d-flex">
                  <div>
-                  <img src="/public/images/james.jpg" class=" border rounded-circle" alt="">
+                  <img src="../foodie/public/images/mypic.jpg" class=" border rounded-circle" alt="">
                 </div>   
                    <div>
-                    <b> <h6 class="position-absolute ps-4 pt-3" style="font-weight: bolder;">Willimes James</h6></b>
-                    <p class="position-absolute ps-4" style="padding-top: 35px; font-size: 12px;font-family: 'Fredoka', sans-serif;">Director and Chief Operations Officer</p>
+                    <b> <h6 class="position-absolute ps-4 pt-3 pb-5" style="font-weight: bolder; font-family: 'Dancing Script', cursive;font-size: 22px;">Mirza Moin</h6></b>
+                    <p class="position-absolute ps-4" style="padding-top: 45px; font-size: 12px;font-family: 'Fredoka', sans-serif;">Director and Chief Operations Officer</p>
                    </div>        
               </div>
             </div>         
         </div>
         <di class="row align-items-center text-center ">
           <div class="col-lg-4 col-12" id="restaurantss">
-            <video src="/public/images/restaurant.mp4" class="border rounded-4" autoplay  loop style="height: 350px; "></video>
+            <video src="../foodie/public/images/restaurant.mp4" class="border rounded-4" autoplay  loop style="height: 350px; "></video>
             <p>RESTAURANT</p>
           </div>
           <div class="col-lg-4 col-12"  id="dinner">
-            <video src="/public/images/dinner.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>
+            <video src="../foodie/public/images/dinner.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>
             <p>private dining</p>
           </div>
           <div class="col-lg-4 col-12" id="bed"> 
-            <video src="/public/images/bed.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>            
+            <video src="../foodie/public/images/bed.mp4"  autoplay loop class="border rounded-4"  style="height: 350px; background-blend-mode:hard-light; margin-top: 150px;"></video>            
             <p>beds</p>
           </div>
         </di>
@@ -154,26 +158,26 @@
         <div id="menulist">
           <ul class="nav nav-pills d-flex flex-wrap justify-content-center">
             <li class="nav-item" >
-              <a class="nav-link active show " data-bs-toggle="pill" data-bs-target="#v-pills-home" ><img src="/public/images/dssert-removebg-preview.png"   alt=""><h6>dssert</h6></a>
+              <a class="nav-link active show " data-bs-toggle="pill" data-bs-target="#v-pills-home" ><img src="../foodie/public/images/dssert-removebg-preview.png"   alt=""><h6>dssert</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-profile" ><img src="/public/images/steak.jpg"   alt=""><h6>Steak</h6></a>
+              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-profile" ><img src="../foodie/public/images/steak.jpg"   alt=""><h6>Steak</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#" data-bs-toggle="pill" data-bs-target="#pills-coffee"><img src="/public/images/coffee.jpg" alt=""> <h6>COFFEE  </h6></a>           
+              <a class="nav-link " href="#" data-bs-toggle="pill" data-bs-target="#pills-coffee"><img src="../foodie/public/images/coffee.jpg" alt=""> <h6>COFFEE  </h6></a>           
             </li>
             <li class="nav-item">
-              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-pizza"><img src="/public/images/pizza.jpg" alt=""><h6>pizza</h6></a>
+              <a class="nav-link " data-bs-toggle="pill" data-bs-target="#pills-pizza"><img src="../foodie/public/images/pizza.jpg" alt=""><h6>pizza</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-burger"><img src="/public/images/burger icon.jpg"alt=""></img> <h6>burger</h6></a>
+              <a class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-burger"><img src="../foodie/public/images/burger icon.jpg"alt=""></img> <h6>burger</h6></a>
             </li>
           </ul>
           <div class="tab-content text-center align-content-center pt-5 " id="pills-tabContent">
             <div class="tab-pane fade active show" id="v-pills-home">
               <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
                  <div class="col-xl-6 col-12 col-lg-6 align-items-center ">
-                       <img alt="" class="img-fluid" src="/public/images/Red Velvet Cupcakes.jpg">
+                       <img alt="" class="img-fluid" src="../foodie/public/images/Red Velvet Cupcakes.jpg">
                  </div>
                  <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
                        <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">Dessert menu</h4>
@@ -213,7 +217,7 @@
               <div class="tab-pane fade" id="pills-profile">
                <div class="row  discover-menu p-3 h-25 " style=" background-color: #d2d9d94f;">
                   <div class="col-xl-6 col-12 col-lg-6 align-items-center d">
-                        <img alt="" class="img-fluid" src="/public/images/Steak2.jpg">
+                        <img alt="" class="img-fluid" src="../foodie/public/images/Steak2.jpg">
                   </div>
                   <div class="col-xl-5 col-lg-5 col-12 discover text-start pt-5"  >
                         <h4 style="font-family: 'Fredoka', sans-serif; font-weight: bolder;">Steak menu</h4>
@@ -378,7 +382,7 @@
     <section>
       <div class="row text-center align-items-center">
          <div class="col-12 col-lg-6 " id="bbq">
-            <img src="/public/images/bbq.jpg" class="h-75 w-75" alt="">
+            <img src="../foodie/public/images/bbq.jpg" class="h-75 w-75" alt="">
             <h2>Steaks & BBQ</h2>
             <p>canonical classics to obscure tiki drinks</p>
             <div class="badge rounded rounded-circle">
@@ -387,7 +391,7 @@
             </div>
          </div>
          <div class="col-12 col-lg-6" id="cook">
-            <img src="/public/images/cook.jpg" class="h-75 w-75" alt="">
+            <img src="../foodie/public/images/cook.jpg" class="h-75 w-75" alt="">
             <h2>Cocktails</h2>
             <p>canonical classics to obscure tiki drinks</p>
             <div class="badge rounded rounded-circle">
@@ -399,34 +403,197 @@
     </section>
     <!--End Cocktails -->
       <!-- reserve a table -->
-      <div id="reserveatable" class="rounded-4 me-5 ms-5">
-         <div class="row">
-            <div class="col-12 col-lg-4" id="reserve">
-               <h3>RESERVE A TABLE</h3>
-               <p>Discover our New Menu !</p>
+      <section>
+         <div class="row text-center align-items-center" id="Experiences">
+            <p>PACKAGES</p>
+               <h3 class="ps-5 pe-5 pb-5">A Collection of Unique Experiences</h3>
+            <div class="col-12 col-lg-6 pb-3" id="Valentine">
+               <img src="../foodie/public/images/Valentine's Day.jpg" class="ms-5" alt="">
+               <div class="badge rounded rounded-circle">
+                  <h4>Valentine's Day Private Table</h4>
+                  <ul class="list-unstyled pb-5"> 
+                     <span></span><li>Candle Light Dinner</li>
+                     <span></span><li>Red Wine</li>
+                     <span></span><li>Romantic Music</li>
+                     <span></span><li>Quality Food</li>
+                  </ul>
+               </div>
             </div>
-           <div class="col-12 col-8">
-            <div>
-               <form action="">
-                  <div class="row d-flex">
-                     <div class="col-12 col-lg-6">
-                        <input type="text" name="complete_name" placeholder="Complete Name">
-                     </div>
-                     <div class="col-12 col-lg-6">
-                        <input type="text" name="complete_name" placeholder="Complete Name">
-                     </div>
+               <div class="col-12 col-lg-6" id="Valentine">
+                  <img src="../foodie/public/images/Birthday Party.jpg" class="ms-5" alt="">
+                  <div class="badge rounded rounded-circle">
+                     <h4>Birthday Party Event Special</h4>
+                     <ul class="list-unstyled pb-5"> 
+                        <span></span><li>Balloons for decorations</li>
+                        <span></span><li>Cake and Pastries</li>
+                        <span></span><li>Soft Drink</li>
+                        <span></span><li>Dinner and Chocolates</li>
+                     </ul>
                   </div>
-               </form>
+               </div>
+         </div>
+      </section>
+      <!--End reserve a table -->
+      <!--Meet Our Experts-->
+      <section class="mt-5">
+         <div class="row text-center align-items-center" id="expets">
+            <h2>Meet Our Experts</h2>
+            <div class="col-12 col-lg-4" id="chef">
+               <img src="../foodie/public/images/chef1.png" class="img-fluid" id="chefimg" alt="">
+               <div class="badge rounded rounded-circle">
+                  <p>Dessert specialist</p>
+                  <h3>Thomas Walim</h3>
+                  <a href=""><span class="bi bi-facebook rounded"></span></a>
+                  <a href=""><span class="bi bi-twitter"></span></a>
+                  <a href=""><span class="bi bi-linkedin"></span></a>
+                  <div>
+                     <img src="../foodie/public/images/sign.png" class="img-fluid" alt="">
+                  </div>
+               </div>
             </div>
-           </div>
+            <div class="col-12 col-lg-4" id="chef">
+               <img src="../foodie/public/images/chef-2.png" class="img-fluid" id="chefimg" alt="">
+               <div class="badge rounded rounded-circle">
+                  <p>Dessert specialist</p>
+                  <h3>Thomas Walim</h3>
+                  <a href=""><span class="bi bi-facebook rounded"></span></a>
+                  <a href=""></a><span class="bi bi-twitter"></span></a>
+                  <a href=""></a><span class="bi bi-linkedin"></span></a>
+                  <div>
+                     <img src="../foodie/public/images/sign.png" class="img-fluid sign" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-4" id="chef">
+               <img src="../foodie/public/images/chef-3.png" class="img-fluid" id="chefimg" alt="">
+               <div class="badge rounded rounded-circle">
+                  <p>Dessert specialist</p>
+                  <h3>Thomas Walim</h3>
+                  <a href=""><span class="bi bi-facebook rounded"></span></a>
+                  <a href=""><span class="bi bi-twitter"></span></a>
+                  <a href=""><span class="bi bi-linkedin"></span></a>
+                  <div>
+                     <img src="../foodie/public/images/sign.png" class="img-fluid" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End Meet Our Experts -->
+      <!-- app-contant section -->
+      <div class="row " id="app">
+         <div class="col-12 col-lg-6" id="app-contant">
+            <p>BEST APP FOR FOODS ORDERING</p>
+            <h3>Manage Your Restaurant Anytime! Anywhere!</h3>
+            <div class="d-flex">
+               <span></span><h6>Higher Reach - Minimal Effort</h6>
+            </div>
+            <div class="d-flex">
+               <span></span><h6>Showcase your Brand</h6>
+            </div>
+            <div class="d-flex">
+               <span></span><h6>Exclusive offers & discounts</h6>
+            </div>
+         </div>
+         <div class="col-12 col-lg-6 align-items-center text-center" id="appimg">
+            <img src="../foodie/public/images/order.png" id="appimgg">
          </div>
       </div>
-      <!--End reserve a table -->
-    <section style="height: 200px;">
+      <!--End app-contant -->
+      <!--news-->
+      <div class="row " id="Recentnews">
+         <h2 class="text-center align-items-center">Recent News</h2>
+         <div class="col-12 col-lg-6 d-flex" id="news-content">
+            <div class="mt-4">
+               <img src="../foodie/public/images/news1.jpg" class=" ps-3 pe-3" alt="" id="newsimg" >
+            </div>
+            <div>
+               <p class="p-2">29 December, 2023</p>
+               <h3>Table restaurant located in on Bank Street</h3>
+               <img src="../foodie/public/images/news chef.jpg" class="ps-3 img-fluid" alt="">
+               <span>by Thomas Walimes</span>
+            </div>
+         </div>
+         <div class="col-12 col-lg-6 d-flex" id="news-content">
+            <div class="mt-4">
+               <img src="../foodie/public/images/news1.jpg" class="  ps-3 pe-3" alt="" id="newsimg" >
+            </div>
+            <div>
+               <p class="p-2">29 December, 2023</p>
+               <h3>Craig Davies appointed executive head chef of Burgh</h3>
+               <img src="../foodie/public/images/news chef.jpg" class="ps-3" alt="" >
+               <span>by Thomas Walimes</span>
+            </div>
+         </div>
+      </div>
+      <!--End of news-->
+      <!--insta-->
+      <section style="margin-top: 50px;">
+         <div class="row text-center" id="insta">
+            <h6></h6>
+            <a href="">
+            <span class="bi bi-instagram rounded rounded-circle" id="instalogo"></span>
+            <h2 >Follow @Winsfolio.com</h2>
+            <p>Join our community to inspire your desires</p>
+            </a>
+         </div>
+      </section>
+      <!--End of insta-->
+      <!-- start footer -->
+      <footer>
+         <div class="row">
+            <div class="col-12 col-lg-3 col-sm-12 ms-5 col-md-12" id="flogo">
+               <img src="../foodie/public/images/logo-white.png" class="img-fluid" alt="">
+               <p style="color: white;font-family:'Fredoka One'; margin-top: 10px;margin-bottom: 10px; font-weight: bolder;">Tuesday - Saturday: 12:00pm - 23:00pm Closed on Sunday</p>
+               <img src="../foodie/public/images/trip.png" class="img-fluid" alt="">
+               <p style="color: white;font-family:'Fredoka One'; margin-top: 10px; font-weight: bolder;">5 star rated on TripAdvisor</p>
+            </div>
+            <div class="col-12 col-lg-2" id="aboutt">
+               <h1 class="ps-4 text-uppercase " >about</h1>
+               <ul class="list-unstyled ps-5" style="color: rgba(0, 0, 0, 0.62);font-family:'Fredoka One';  font-weight: bolder;">
+                  <li>Information</li>
+                  <li>Special Dish</li>
+                  <li>Reservation</li>
+                  <li>Contact</li>
+               </ul>
+            </div>
+            <div class="col-12 col-lg-2" id="menuu">
+               <h1 class="ps-4 text-uppercase" style="font-family: 'Fredoka', sans-serif ;font-weight: bolder;letter-spacing: 1px;">Menu</h1>
+               <ul class="list-unstyled ps-5" class="list-unstyled" style="color: rgba(0, 0, 0, 0.62);font-family:'Fredoka One';  font-weight: bolder;">
+                  <li>Steaks</li>
+                  <li>Burgers</li>
+                  <li>Coctails</li>
+                  <li>Bar B Q</li>
+                  <li>Desserts</li>
+               </ul>
+            </div>
+            <div class="col-12 col-lg-3" id="menuu">
+               <h1 class="ps-4 text-uppercase" style="font-family: 'Fredoka', sans-serif ;font-weight: bolder;letter-spacing: 1px;">Newsletter</h1>
+               <p class="ps-4 mt-3">Get recent news and updates.</p>
+               <form action="">
+                  <input type="text" placeholder="enter your mail id" name="" id="">
+                  <button class="btn btn-danger ms-3">Subscribe</button>
+               </form>
+            </div>
+         </div>
+         <div class="footer-bootem row justify-content-lg-between" id="bottomrow">
+            <div class="header-social-media col-12 col-lg-6 ps-5 ms-3">
+               <h6><span>© 2023 Foodio</span> | Restaurant and BBQ.</h6>
+               </div>
+            <div class="footer-social-media col-12 col-lg-5  ">
+               <a href="#">Facebook</a>
+               <a href="#">Twitter</a>
+               <a href="#">Instagram</a>
+               <a href="#">Youtube</a>   
+            </div>
+         </div>
+      </footer>
+      <!-- end of footer -->
+    <!-- <section style="height: 200px;">
 
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!-- <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+    </section> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    <script src="../foodie/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../foodie/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
