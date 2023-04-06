@@ -562,7 +562,7 @@
     height:150px;
 }
 #insta{
-    background-image: url(/public/images/socialbanner.jpg);
+    background-image: url(../foodie/public/images/socialbanner.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 111px;
